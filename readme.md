@@ -3,8 +3,8 @@
 <h2>How to use:</h2>
 
 <ol>
-	<li><a href="javascript:void(0);">Download </a>from GitHub;</li>
-	<li>Install Node Modules: <strong>npm i</strong>;</li>
+	<li>Download <strong>from GitHub.</strong></li>
+	<li>Install Node Modules: <strong>npm i</strong>.</li>
 	<li>Run the template: <strong>gulp</strong>.</li>
 </ol>
 
