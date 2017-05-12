@@ -7,28 +7,28 @@
 	box-sizing: border-box
 
 *::-webkit-input-placeholder
-    color: $input_color
+	color: $input_color
 
 *:focus::-webkit-input-placeholder
 	opacity: 0
 	transition: opacity .3s ease
 
 *:-moz-placeholder
-    color: $input_color
+	color: $input_color
 
 *:focus:-moz-placeholder
 	opacity: 0
 	transition: opacity .3s ease
 
 *::-moz-placeholder
-    color: $input_color
+	color: $input_color
 
 *:focus::-moz-placeholder
 	opacity: 0
 	transition: opacity .3s ease
 
 *:-ms-input-placeholder
-    color: $input_color
+	color: $input_color
 
 *:focus:-ms-input-placeholder
 	opacity: 0
@@ -37,6 +37,7 @@
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: $input_color
+
 body input:required:valid,
 body textarea:required:valid
 	color: $input_color
@@ -50,6 +51,7 @@ body
 	position: relative
 	line-height: 1
 	font-family: $helvetica_light
+	color: $font_color
 	overflow-x: hidden
 	min-height: 100vh
 	height: auto
@@ -67,17 +69,17 @@ ul, li
 	margin: 0
 
 a
-    text-decoration: none
-    transition: .4s ease
-    color: #aeaeae
+	text-decoration: none
+	transition: .4s ease
+	color: #aeaeae
 
 a:focus, a:hover
-    outline: 0
-    text-decoration: none
-    color: #4a4a4a
+	outline: 0
+	text-decoration: none
+	color: #4a4a4a
 
 button
-    outline: 0
+	outline: 0
 
 .p0
 	padding: 0 !important
@@ -90,4 +92,26 @@ button
 	max-width: 100%
 	height: auto
 
-@import "media" // Всегда в конце
+.tabs
+	border-bottom: 1px solid $border_color
+	text-align: center
+	font-size: 1.5em
+	&__btn
+		margin-left: -8px
+		padding: 35px 0
+		width: 25%
+		background: none
+		border: none
+		outline: none
+		cursor: pointer
+		&:hover, &:active
+			background-color: $hover_color
+			color: black
+		&--active
+			background-color: rgb(242, 243, 247)
+			color: rgb(41, 41, 42)
+
+.slider
+	display: none
+@import "media"
+// Всегда в конце
