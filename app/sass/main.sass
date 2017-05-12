@@ -104,6 +104,7 @@ button
 		border: none
 		outline: none
 		cursor: pointer
+		@include transition
 		&:hover, &:active
 			background-color: $hover_color
 			color: black
@@ -111,7 +112,20 @@ button
 			background-color: rgb(242, 243, 247)
 			color: rgb(41, 41, 42)
 
+.tab-content
+	background-color: $hover_color
+	height: calc(100vh - 95px)
+	&__item
+		display: none
+		background-color: white
+		border: 1px solid $border_color
+		@include transition
 .slider
-	display: none
+	&__dots
+		list-style: none
+		text-align: center
+		&-item
+			display: inline-block
+		&-btn
 @import "media"
 // Всегда в конце
