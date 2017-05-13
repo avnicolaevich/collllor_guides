@@ -4,15 +4,35 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199px)
-	/**/
-
+	.slider
+		&__dots
+			&-text
+				padding-left: 10px
+				overflow: hidden
+				text-overflow: ellipsis
+				white-space: nowrap
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px)
 	.tabs
 		&__btn
 			width: 50%
-
+	.slider
+		&__dots
+			&-item
+			&-text
+				display: none
+			&-number
+				display: inline-block
+				width: 22px
+				height: 22px
+				border: 2px solid #aaa
+				border-radius: 50%
+				background-color: #fff
+				&-active
+					color: #fff
+					border-color: #777
+					background-color: #777
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px)
 	/**/
@@ -21,6 +41,10 @@
 	.tabs
 		&__btn
 			margin-left: -7px
+	.slider
+		&__dots
+			&-number
+				font-size: 1.143em
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 479px)
