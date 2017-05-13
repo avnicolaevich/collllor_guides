@@ -71,12 +71,12 @@ ul, li
 a
 	text-decoration: none
 	transition: .4s ease
-	color: #aeaeae
+	color: $link
 
 a:focus, a:hover
 	outline: 0
 	text-decoration: none
-	color: #4a4a4a
+	color: rgba(229, 8, 8, 0.6)
 
 button
 	outline: 0
@@ -93,10 +93,9 @@ button
 	height: auto
 
 .tabs
-	border-bottom: 1px solid $border_color
 	text-align: center
-	font-size: 1.5em
 	&__btn
+		font-size: 1.5em
 		margin-left: -8px
 		padding: 35px 0
 		width: 25%
@@ -109,47 +108,94 @@ button
 			background-color: $hover_color
 			color: black
 		&--active
-			background-color: rgb(242, 243, 247)
+			background-color: $background_color
 			color: rgb(41, 41, 42)
 
 .tab-content
-	background-color: $hover_color
+	background-color: $background_color
 	height: calc(100vh - 95px)
 	&__item
+		padding-top: 30px
 		display: none
 		background-color: white
 		border: 1px solid $border_color
-		@include transition
+		@include animation
+
 .slider
+	display: inline-block
 	&__dots
 		list-style: none
 		text-align: center
-		
+		width: 100%
 		&-item
 			display: inline-block
-			overflow: hidden
+			margin-right: -5px
+			width: 19%
+			&:last-child .slider__dots-btn::after,
+			&:last-child .slider__dots-btn::before
+				border: 0
+			&:first-of-type button
+				border-left: 1px solid rgb(218, 226, 237)
 		&-btn
 			position: relative
+			display: block
 			padding: 24px 0
-			width: 290px
-			border-radius: 1px
-			border: 1px solid $border_color
-			background-color: $hover_color
+			width: 100%
+			border: 1px solid rgb(218, 226, 237)
+			background-color: rgb(247, 248, 250)
+			border-left: 0
+			@include transition
 			&::after
-				content: ''
+				content: " "
+				display: block
+				width: 0
+				height: 0
+				border-top: 32px solid transparent
+				border-bottom: 32px solid transparent
+				border-left: 20px solid rgb(247, 248, 250)
 				position: absolute
-				right: 0
 				top: 50%
-				margin: -20px 0 0 -19px
-				border-right: none
-				border-top: none
-				border-width: 4.5px
-				width: 40px
-				height: 40px
-				transform: rotate(45deg)
-				background-color: $hover_color
+				margin-top: -32px
+				left: 100%
+				z-index: 2
+				@include transition
+			&::before
+				content: " "
+				display: block
+				width: 0
+				height: 0
+				border-top: 32px solid transparent
+				border-bottom: 32px solid transparent
+				border-left: 20px solid rgb(218, 226, 237)
+				position: absolute
+				top: 50%
+				margin-top: -32px
+				margin-left: 1px
+				left: 100%
+				z-index: 1
+			&:hover,
+			&:focus
+				background-color: white
+			&:hover:after, &:focus:after
+				border-left-color: white
 			&--active
-				background-color: $hover_color
-		
+				background-color: white
+				color: $font_hover
+				&::after
+					border-left-color: white
+		&-text
+			display: block
+		&-number
+			display: none
+	&__img
+		padding: 55px 0 15px 55px
+	&__content
+		line-height: 1.8
+		padding-top: 40%
+		&-title
+			padding-bottom: 20px
+			color: $font_hover
+		&-link
+			padding-top: 10px
 @import "media"
 // Всегда в конце

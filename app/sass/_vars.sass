@@ -11,7 +11,7 @@ $white: rgb(255, 255, 255)
 $black: rgb(0, 0, 0)
 $hover_color: rgb(227, 227, 227)
 $border_color: rgb(220, 222, 227)
-
+$background_color: rgb(242, 243, 247)
 
 @mixin transition
 	-webkit-transition: 0.4s ease
@@ -57,3 +57,18 @@ $border_color: rgb(220, 222, 227)
 		color: #c0d3cd /* Firefox 18- */
 	&:-ms-input-placeholder
 		color: #c0d3cd
+
+@mixin animation
+	animation: slide-bottom 0.4s cubic-bezier(0.550, 0.055, 0.675, 0.190) both
+
+@-webkit-keyframes slide-bottom
+	0%
+		transform: translateY(-5px)
+	100%
+		transform: translateY(0)
+		
+@keyframes slide-bottom
+	0%
+		transform: translateY(-5px)
+	100%
+		transform: translateY(0)
