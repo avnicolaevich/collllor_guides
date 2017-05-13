@@ -134,6 +134,8 @@ button
 			&:last-child .slider__dots-btn::after,
 			&:last-child .slider__dots-btn::before
 				border: 0
+			&:first-of-type button
+				border-left: 1px solid rgb(218, 226, 237)
 		&-btn
 			position: relative
 			display: block
@@ -143,8 +145,6 @@ button
 			background-color: rgb(247, 248, 250)
 			border-left: 0
 			@include transition
-			&:first-child
-				border-left: 1px solid rgb(218, 226, 237)
 			&::after
 				content: " "
 				display: block
