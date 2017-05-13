@@ -2,8 +2,9 @@ $(document).ready(function() {
 
     /* INITIAL DEFAULT TAB */
     $('#Profile').css("display", "block");
-
-    /* INITIAL ACCORDION */
+    /* INITIAL SLIDERSHOW */
+    var slideIndex = 1;
+    showSlides(slideIndex);
 });
 
 $(window).resize(function(){
@@ -50,3 +51,29 @@ function openTab(evt, tabName) {
         }
 }
 /* OPEN TABS END */
+
+/* SLIDERSHOW START */
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("slider");
+    var dots = document.getElementsByClassName("slider__dots-btn");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" slider__dots-btn--active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " slider__dots-btn--active";
+}
+/* SLIDERSHOW END */

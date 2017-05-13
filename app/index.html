@@ -42,31 +42,31 @@
             <div id="Profile" class="tab-content__item">
                 <ul class="slider__dots">
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn slider__dots-btn--active">
-                             <span class="slider__dots-text">Public  Company Information</span>
+                        <button class="slider__dots-btn slider__dots-btn--active" onclick="currentSlide(1)">
+                            <span class="slider__dots-text">Public  Company Information</span>
                             <span class="slider__dots-number slider__dots-number-active">1</span>
                         </button>
                     </li>
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn">
+                        <button class="slider__dots-btn" onclick="currentSlide(2)">
                             <span class="slider__dots-text">Capabilities</span>
                             <span class="slider__dots-number">2</span>
                         </button>
                     </li>
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn">
+                        <button class="slider__dots-btn" onclick="currentSlide(3)">
                              <span class="slider__dots-text">Payment & Taxes</span>
                             <span class="slider__dots-number">3</span>
                         </button>
                     </li>
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn">
+                        <button class="slider__dots-btn" onclick="currentSlide(4)">
                              <span class="slider__dots-text">View Your Profile</span>
                             <span class="slider__dots-number">4</span>
                         </button>
                     </li>
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn">
+                        <button class="slider__dots-btn" onclick="currentSlide(5)">
                             <span class="slider__dots-text">Company Banner</span>
                             <span class="slider__dots-number">5</span>
                         </button>
@@ -87,7 +87,64 @@
                             </div>
                         </div>
                     </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/images.png" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Tell about your company</h2>
+                                <p class="slider__content-text">
+                                    2Upload your logo. Let prospective buyers know about your brand and highlight what your brand stands for.
+                                </p>
+                                <p class="slider__content-link">Go to <a href="#">Account Settings ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/images.png" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Tell about your company</h2>
+                                <p class="slider__content-text">
+                                    3Upload your logo. Let prospective buyers know about your brand and highlight what your brand stands for.
+                                </p>
+                                <p class="slider__content-link">Go to <a href="#">Account Settings ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/images.png" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Tell about your company</h2>
+                                <p class="slider__content-text">
+                                    4Upload your logo. Let prospective buyers know about your brand and highlight what your brand stands for.
+                                </p>
+                                <p class="slider__content-link">Go to <a href="#">Account Settings ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/images.png" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Tell about your company</h2>
+                                <p class="slider__content-text">
+                                    5Upload your logo. Let prospective buyers know about your brand and highlight what your brand stands for.
+                                </p>
+                                <p class="slider__content-link">Go to <a href="#">Account Settings ></a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!--</div>-->
                 <a class="slider__prev" onclick="plusSlides(-1)">
                     <i class="icon-angle-left"></i>
                 </a>
@@ -95,34 +152,33 @@
                     <i class="icon-angle-right"></i>
                 </a>
             </div>
+            <button class="tabs__btn hidden-md hidden-lg" onclick="openTab(event, 'Quotes')">Submit Quotes</button>
+            <div id="Quotes" class="tab-content__item">
+                222Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cupiditate distinctio, explicabo
+                facilis
+                impedit laudantium minus nesciunt nihil nobis praesentium quae, quia repellat tenetur velit? Aperiam
+                delectus distinctio dolorem ducimus obcaecati qui tempore. Accusamus adipisci commodi culpa ea eveniet
+                necessitatibus provident repellat. Assumenda beatae commodi deleniti molestias placeat porro!
+            </div>
+            <button class="tabs__btn hidden-md hidden-lg" onclick="openTab(event, 'Orders')">Manage Orders</button>
+            <div id="Orders" class="tab-content__item">
+                333Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cupiditate distinctio, explicabo
+                facilis
+                impedit laudantium minus nesciunt nihil nobis praesentium quae, quia repellat tenetur velit? Aperiam
+                delectus distinctio dolorem ducimus obcaecati qui tempore. Accusamus adipisci commodi culpa ea eveniet
+                necessitatibus provident repellat. Assumenda beatae commodi deleniti molestias placeat porro!
+            </div>
+            <button class="tabs__btn hidden-md hidden-lg" onclick="openTab(event, 'Catalog')">Manage your Catalog</button>
+            <div id="Catalog" class="tab-content__item">
+                444Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cupiditate distinctio, explicabo
+                facilis
+                impedit laudantium minus nesciunt nihil nobis praesentium quae, quia repellat tenetur velit? Aperiam
+                delectus distinctio dolorem ducimus obcaecati qui tempore. Accusamus adipisci commodi culpa ea eveniet
+                necessitatibus provident repellat. Assumenda beatae commodi deleniti molestias placeat porro!
+            </div>
         </div>
     </div>
 </section>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
-
-<!--<button class="tabs__btn hidden-md hidden-lg" onclick="openTab(event, 'Quotes')">Submit Quotes</button>-->
-<!--<div id="Quotes" class="tab-content__item">-->
-<!--222Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cupiditate distinctio, explicabo-->
-<!--facilis-->
-<!--impedit laudantium minus nesciunt nihil nobis praesentium quae, quia repellat tenetur velit? Aperiam-->
-<!--delectus distinctio dolorem ducimus obcaecati qui tempore. Accusamus adipisci commodi culpa ea eveniet-->
-<!--necessitatibus provident repellat. Assumenda beatae commodi deleniti molestias placeat porro!-->
-<!--</div>-->
-<!--<button class="tabs__btn hidden-md hidden-lg" onclick="openTab(event, 'Orders')">Manage Orders</button>-->
-<!--<div id="Orders" class="tab-content__item">-->
-<!--333Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cupiditate distinctio, explicabo-->
-<!--facilis-->
-<!--impedit laudantium minus nesciunt nihil nobis praesentium quae, quia repellat tenetur velit? Aperiam-->
-<!--delectus distinctio dolorem ducimus obcaecati qui tempore. Accusamus adipisci commodi culpa ea eveniet-->
-<!--necessitatibus provident repellat. Assumenda beatae commodi deleniti molestias placeat porro!-->
-<!--</div>-->
-<!--<button class="tabs__btn hidden-md hidden-lg" onclick="openTab(event, 'Catalog')">Manage your Catalog</button>-->
-<!--<div id="Catalog" class="tab-content__item">-->
-<!--444Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cupiditate distinctio, explicabo-->
-<!--facilis-->
-<!--impedit laudantium minus nesciunt nihil nobis praesentium quae, quia repellat tenetur velit? Aperiam-->
-<!--delectus distinctio dolorem ducimus obcaecati qui tempore. Accusamus adipisci commodi culpa ea eveniet-->
-<!--necessitatibus provident repellat. Assumenda beatae commodi deleniti molestias placeat porro!-->
-<!--</div>-->
