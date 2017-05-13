@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="font-icons" horiz-adv-x="1000" >
+<font-face font-family="font-icons" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="angle-left" unicode="&#xe812;" d="M567-84c0 0-94 105-210 221l-210 211 210 210c116 116 210 223 210 223l-60 69-253-253-254-254 246-246c136-136 258-247 258-247z" horiz-adv-x="567" />
+
+<glyph glyph-name="angle-right" unicode="&#xe813;" d="M0-84c0 0 95 105 210 221l210 211-210 210c-115 116-210 223-210 223l60 69 254-253 253-254-246-246c-135-136-258-247-258-247z" horiz-adv-x="567" />
+</font>
+</defs>
+</svg>
