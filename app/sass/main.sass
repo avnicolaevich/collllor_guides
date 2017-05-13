@@ -71,12 +71,12 @@ ul, li
 a
 	text-decoration: none
 	transition: .4s ease
-	color: #aeaeae
+	color: $link
 
 a:focus, a:hover
 	outline: 0
 	text-decoration: none
-	color: #4a4a4a
+	color: rgba(229, 8, 8, 0.6)
 
 button
 	outline: 0
@@ -94,8 +94,8 @@ button
 
 .tabs
 	text-align: center
-	font-size: 1.5em
 	&__btn
+		font-size: 1.5em
 		margin-left: -8px
 		padding: 35px 0
 		width: 25%
@@ -108,21 +108,21 @@ button
 			background-color: $hover_color
 			color: black
 		&--active
-			background-color: rgb(242, 243, 247)
+			background-color: $background_color
 			color: rgb(41, 41, 42)
 
 .tab-content
-	background-color: $hover_color
+	background-color: $background_color
 	height: calc(100vh - 95px)
 	&__item
 		padding-top: 30px
 		display: none
 		background-color: white
 		border: 1px solid $border_color
-		@include transition
+		@include animation
 
 .slider
-	
+	display: inline-block
 	&__dots
 		list-style: none
 		text-align: center
@@ -180,14 +180,22 @@ button
 				border-left-color: white
 			&--active
 				background-color: white
+				color: $font_hover
 				&::after
 					border-left-color: white
 		&-text
 			display: block
 		&-number
 			display: none
-			
-			
-
+	&__img
+		padding: 55px 0 15px 55px
+	&__content
+		line-height: 1.8
+		padding-top: 40%
+		&-title
+			padding-bottom: 20px
+			color: $font_hover
+		&-link
+			padding-top: 10px
 @import "media"
 // Всегда в конце
