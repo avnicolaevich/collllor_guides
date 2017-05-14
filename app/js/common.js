@@ -85,13 +85,15 @@ function showSlides(n, tabName) {
 }
 
 function checkDisplay(slideIndex, tab) {
+
     var dislplayPrev = tab.getElementsByClassName("slider__prev");
     var dislplayNext = tab.getElementsByClassName("slider__next");
+    var coutSlider = tab.getElementsByClassName("slider").length;
 
     if (slideIndex == 1) {
         dislplayPrev[0].style.display = "none";
         dislplayNext[0].style.display = "block"
-    } else if (slideIndex == 5){
+    } else if (slideIndex == coutSlider) {
         dislplayPrev[0].style.display = "block";
         dislplayNext[0].style.display = "none"
     } else {
