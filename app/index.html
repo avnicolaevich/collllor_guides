@@ -42,31 +42,31 @@
             <div id="Profile" class="tab-content__item">
                 <ul class="slider__dots">
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn slider__dots-btn--active" onclick="currentSlide(1)">
+                        <button class="slider__dots-btn slider__dots-btn--active" onclick="currentSlide(1, 'Profile')">
                             <span class="slider__dots-text">Public  Company Information</span>
-                            <span class="slider__dots-number slider__dots-number-active">1</span>
+                            <span class="slider__dots-number">1</span>
                         </button>
                     </li>
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn" onclick="currentSlide(2)">
+                        <button class="slider__dots-btn" onclick="currentSlide(2, 'Profile')">
                             <span class="slider__dots-text">Capabilities</span>
                             <span class="slider__dots-number">2</span>
                         </button>
                     </li>
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn" onclick="currentSlide(3)">
+                        <button class="slider__dots-btn" onclick="currentSlide(3, 'Profile')">
                              <span class="slider__dots-text">Payment & Taxes</span>
                             <span class="slider__dots-number">3</span>
                         </button>
                     </li>
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn" onclick="currentSlide(4)">
+                        <button class="slider__dots-btn" onclick="currentSlide(4, 'Profile')">
                              <span class="slider__dots-text">View Your Profile</span>
                             <span class="slider__dots-number">4</span>
                         </button>
                     </li>
                     <li class="slider__dots-item">
-                        <button class="slider__dots-btn" onclick="currentSlide(5)">
+                        <button class="slider__dots-btn" onclick="currentSlide(5, 'Profile')">
                             <span class="slider__dots-text">Company Banner</span>
                             <span class="slider__dots-number">5</span>
                         </button>
@@ -75,7 +75,7 @@
                 <div class="row">
                     <div class="slider">
                         <div class="col-md-7">
-                            <img src="img/images.png" alt="images" class="slider__img img-responsive">
+                            <img src="img/profile_first.jpg" alt="images" class="slider__img img-responsive">
                         </div>
                         <div class="col-md-4">
                             <div class="slider__content">
@@ -89,92 +89,421 @@
                     </div>
                     <div class="slider">
                         <div class="col-md-7">
-                            <img src="img/images.png" alt="images" class="slider__img img-responsive">
+                            <img src="img/profile_second.jpg" alt="images" class="slider__img img-responsive">
                         </div>
                         <div class="col-md-4">
                             <div class="slider__content">
-                                <h2 class="slider__content-title">Tell about your company</h2>
+                                <h2 class="slider__content-title">Set up your capabilities
+                                    and company size</h2>
                                 <p class="slider__content-text">
-                                    2Upload your logo. Let prospective buyers know about your brand and highlight what your brand stands for.
+                                    We receive hundreds of quote requests daily. Set up your capabilities and we will automatically send you the quotes that you can accommodate.
                                 </p>
-                                <p class="slider__content-link">Go to <a href="#">Account Settings ></a></p>
+                                <p class="slider__content-link">Go to <a href="#">Capabilities ></a></p>
                             </div>
                         </div>
                     </div>
                     <div class="slider">
                         <div class="col-md-7">
-                            <img src="img/images.png" alt="images" class="slider__img img-responsive">
+                            <img src="img/profile_third.jpg" alt="images" class="slider__img img-responsive">
                         </div>
                         <div class="col-md-4">
                             <div class="slider__content">
-                                <h2 class="slider__content-title">Tell about your company</h2>
+                                <h2 class="slider__content-title">Get paid your way</h2>
                                 <p class="slider__content-text">
-                                    3Upload your logo. Let prospective buyers know about your brand and highlight what your brand stands for.
+                                    Choose your preferred payment method: check, PayPal, or bank transfer. Payments go to your escrow account. Once the order gets shipped we will transfer the payment directly to you. See
+                                    <a href="">Manage Orders</a> for more information.
                                 </p>
-                                <p class="slider__content-link">Go to <a href="#">Account Settings ></a></p>
+                                <p class="slider__content-link">Go to <a href="#">Payment ></a></p>
                             </div>
                         </div>
                     </div>
                     <div class="slider">
                         <div class="col-md-7">
-                            <img src="img/images.png" alt="images" class="slider__img img-responsive">
+                            <img src="img/profile_fourth.jpg" alt="images" class="slider__img img-responsive">
                         </div>
                         <div class="col-md-4">
                             <div class="slider__content">
-                                <h2 class="slider__content-title">Tell about your company</h2>
+                                <h2 class="slider__content-title">Check how your profile looks</h2>
                                 <p class="slider__content-text">
-                                    4Upload your logo. Let prospective buyers know about your brand and highlight what your brand stands for.
+                                    This shows how buyers will view your profile.
+                                    You can see visits to your profile, clients, and read customer reviews.
                                 </p>
-                                <p class="slider__content-link">Go to <a href="#">Account Settings ></a></p>
+                                <p class="slider__content-link">Go to <a href="#">My Profile ></a></p>
                             </div>
                         </div>
                     </div>
                     <div class="slider">
                         <div class="col-md-7">
-                            <img src="img/images.png" alt="images" class="slider__img img-responsive">
+                            <img src="img/profile_fifth.jpg" alt="images" class="slider__img img-responsive">
                         </div>
                         <div class="col-md-4">
                             <div class="slider__content">
-                                <h2 class="slider__content-title">Tell about your company</h2>
+                                <h2 class="slider__content-title">Make it brighter!</h2>
                                 <p class="slider__content-text">
-                                    5Upload your logo. Let prospective buyers know about your brand and highlight what your brand stands for.
+                                    Add a grand-banner to the top of your profile
+                                    to showcase your equipment, team, awards, or
+                                    portfolio.
                                 </p>
-                                <p class="slider__content-link">Go to <a href="#">Account Settings ></a></p>
+                                <p class="slider__content-link">Go to <a href="#">My Profile ></a></p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--</div>-->
-                <a class="slider__prev" onclick="plusSlides(-1)">
+                <a class="slider__prev" onclick="plusSlides(-1, 'Profile')">
                     <i class="icon-angle-left"></i>
                 </a>
-                <a class="slider__next" onclick="plusSlides(1)">
+                <a class="slider__next" onclick="plusSlides(1, 'Profile')">
                     <i class="icon-angle-right"></i>
                 </a>
             </div>
             <button class="tabs__btn hidden-md hidden-lg" onclick="openTab(event, 'Quotes')">Submit Quotes</button>
             <div id="Quotes" class="tab-content__item">
-                222Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cupiditate distinctio, explicabo
-                facilis
-                impedit laudantium minus nesciunt nihil nobis praesentium quae, quia repellat tenetur velit? Aperiam
-                delectus distinctio dolorem ducimus obcaecati qui tempore. Accusamus adipisci commodi culpa ea eveniet
-                necessitatibus provident repellat. Assumenda beatae commodi deleniti molestias placeat porro!
+                <ul class="slider__dots">
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn slider__dots-btn--active" onclick="currentSlide(1, 'Quotes')">
+                            <span class="slider__dots-text">Receive a Quote</span>
+                            <span class="slider__dots-number">1</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(2, 'Quotes')">
+                            <span class="slider__dots-text">Add you Price</span>
+                            <span class="slider__dots-number">2</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(3, 'Quotes')">
+                            <span class="slider__dots-text">Manage your Quote</span>
+                            <span class="slider__dots-number">3</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(4, 'Quotes')">
+                            <span class="slider__dots-text">You’ve got an Order </span>
+                            <span class="slider__dots-number">4</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/quotes_first.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Quote Request Email</h2>
+                                <p class="slider__content-text">
+                                    Collllor team accepts custom quote requests on-site, creates a product profile, approves it with buyer and automatically sends to all sellers, whose capabilities match.  If the quote request you received does not match your company’s profile please contact
+                                    <a href="#">support@collllor.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/quotes_second.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Never Quote Again for
+                                    the Same Product</h2>
+                                <p class="slider__content-text">
+                                    The product you quote will be featured in public catalog. Everyone who sees this product will be able to order it from you. Edit your price or remove it at any time. See next slide to learn How?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/quotes_third.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Manage your Prices and
+                                    Quotes</h2>
+                                <p class="slider__content-text">
+                                    You can view the products you quoted under My Products. Here you can edit the prices or delete the product from your account. Learn how to add your own listing see
+                                    <a href="#">Manage your Catalog.</a>
+                                </p>
+                                <p class="slider__content-link">Go to <a href="#">My Orders ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/quotes_fourth.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">You have the Order!</h2>
+                                <p class="slider__content-text">
+                                    When order is placed you will be notified via email.
+                                    Click the link in your Invoice Email and open the orders page in your account. See how to manage your orders
+                                    <a href="#">here.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--</div>-->
+                <a class="slider__prev" onclick="plusSlides(-1, 'Quotes')">
+                    <i class="icon-angle-left"></i>
+                </a>
+                <a class="slider__next" onclick="plusSlides(1, 'Quotes')">
+                    <i class="icon-angle-right"></i>
+                </a>
             </div>
             <button class="tabs__btn hidden-md hidden-lg" onclick="openTab(event, 'Orders')">Manage Orders</button>
             <div id="Orders" class="tab-content__item">
-                333Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cupiditate distinctio, explicabo
-                facilis
-                impedit laudantium minus nesciunt nihil nobis praesentium quae, quia repellat tenetur velit? Aperiam
-                delectus distinctio dolorem ducimus obcaecati qui tempore. Accusamus adipisci commodi culpa ea eveniet
-                necessitatibus provident repellat. Assumenda beatae commodi deleniti molestias placeat porro!
+                <ul class="slider__dots">
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn slider__dots-btn--active" onclick="currentSlide(1, 'Orders')">
+                            <span class="slider__dots-text">Review Your Order</span>
+                            <span class="slider__dots-number">1</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(2, 'Orders')">
+                            <span class="slider__dots-text">Check Files (Cancel Order)</span>
+                            <span class="slider__dots-number">2</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(3, 'Orders')">
+                            <span class="slider__dots-text">Approve Order</span>
+                            <span class="slider__dots-number">3</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(4, 'Orders')">
+                            <span class="slider__dots-text">Shipping</span>
+                            <span class="slider__dots-number">4</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(5, 'Orders')">
+                            <span class="slider__dots-text">Payment</span>
+                            <span class="slider__dots-number">5</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/order_first.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">You have the order!</h2>
+                                <p class="slider__content-text">
+                                    When an order is placed, you will be notified via
+                                    email.
+                                    Click the link in your Invoice Email and open the
+                                    orders’ page in your account. New orders are
+                                    highlighted.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/order_second.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">1. Inspect Files</h2>
+                                <p class="slider__content-text">
+                                    Review submitted files.
+                                    Wrong order? Contact your buyer ASAP.
+                                    You can also cancel the order by clicking a grey status bar under the word  “Canceled”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/order_third.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">2. Accept Order
+                                    or Send an Approval</h2>
+                                <p class="slider__content-text">
+                                    After receiving the files move your order into
+                                    “In Production” by clicking “I Accept Order”.
+                                    If your buyer requested electronic approval you will be offered to upload files and send them for final approval. After your buyer approves the files, the order automatically moves into “In Production”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/order_fourth.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">3. Shipping & Reviews</h2>
+                                <p class="slider__content-text">
+                                    Change the status of the order to “Shipped” by sending the tracking number to your customer.
+                                </p>
+                                <p class="slider__content-text" style="padding-top: 25px">In the same window, send review request to your buyer in a number of days you think is reasonable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/order_fifth.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Payment</h2>
+                                <p class="slider__content-text">
+                                    We make payments right after your order was shipped.
+                                </p>
+                                <p class="slider__content-text">
+                                    It takes up to 1-5 business days for the bank transfer, check, or Paypal transfer. 7% are taken from the order, including additional services cost. Tax and shipping cost are not included.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--</div>-->
+                <a class="slider__prev" onclick="plusSlides(-1, 'Orders')">
+                    <i class="icon-angle-left"></i>
+                </a>
+                <a class="slider__next" onclick="plusSlides(1, 'Orders')">
+                    <i class="icon-angle-right"></i>
+                </a>
             </div>
             <button class="tabs__btn hidden-md hidden-lg" onclick="openTab(event, 'Catalog')">Manage your Catalog</button>
             <div id="Catalog" class="tab-content__item">
-                444Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi cum cupiditate distinctio, explicabo
-                facilis
-                impedit laudantium minus nesciunt nihil nobis praesentium quae, quia repellat tenetur velit? Aperiam
-                delectus distinctio dolorem ducimus obcaecati qui tempore. Accusamus adipisci commodi culpa ea eveniet
-                necessitatibus provident repellat. Assumenda beatae commodi deleniti molestias placeat porro!
+                <ul class="slider__dots">
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn slider__dots-btn--active" onclick="currentSlide(1, 'Catalog')">
+                            <span class="slider__dots-text">Adding  Prices  to Existing Listing </span>
+                            <span class="slider__dots-number">1</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(2, 'Catalog')">
+                            <span class="slider__dots-text">Prepare your Product’s Images</span>
+                            <span class="slider__dots-number">2</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(3, 'Catalog')">
+                            <span class="slider__dots-text">Create New Product</span>
+                            <span class="slider__dots-number">3</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(4, 'Catalog')">
+                            <span class="slider__dots-text">Copy And Save</span>
+                            <span class="slider__dots-number">4</span>
+                        </button>
+                    </li>
+                    <li class="slider__dots-item">
+                        <button class="slider__dots-btn" onclick="currentSlide(5, 'Catalog')">
+                            <span class="slider__dots-text">Delete Your Listing</span>
+                            <span class="slider__dots-number">5</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/catalog_first.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Creating your Listing is Easy</h2>
+                                <p class="slider__content-text">
+                                    Browsing Collllor catalog you can add your prices to the listed products with just one click. It will save your time on listing process and increase your chance to sell. Buyers choose not only by price, but by turnaround time, shipping cost, your reviews and credibility.
+                                </p>
+                                <p class="slider__content-text" style="padding-top: 20px">
+                                    Collllor will not accept listing if similar products been already listed and attributes match.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/catalog_second.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Good Image Sells</h2>
+                                <p class="slider__content-text">
+                                    Every product on Collllor needs 1-4 images. Choose images that are clear, easy to understand, information-rich, and attractively presented. Images must accurately represent the product and show only the product you sell, with minimal or no propping.  Size: 1000 pixels or larger in either height or width, JPEG (.jpg), up to 1MB, landscape format preferred.
+                                    <a href="#">View Image Requirements</a>
+                                </p>
+                                <p class="slider__content-text" style="padding-top: 20px">Contact <a href="#">support@collllor.com</a> for photography assistance. 1 product - $40.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/catalog_third.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Listing Your Product</h2>
+                                <p class="slider__content-text">
+                                    Follow the guidelines on the New Product Page.
+                                </p>
+                                <p class="slider__content-text">
+                                    My Products-> Create New Product
+                                </p>
+                                <p class="slider__content-text">
+                                    After you upload images - save the product. Then press Edit and add your prices.
+                                </p>
+                                <p class="slider__content-text">
+                                    <a href="#">Request a Call Back for assistance.</a>
+                                </p>
+                                <p class="slider__content-link" style="padding-top: 20px;">Go to <a href="#">New Product ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/catalog_fourth.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Make it Simple for Similarities</h2>
+                                <p class="slider__content-text">
+                                    If you have many items that differ with just one attribute use Copy & Save button to simplify your listing. It will copy the product exactly, including your price. Change the Name(!) and the attribute to save a new product.
+                                </p>
+                                <p class="slider__content-text"><a href="#">Request a Call Back</a> for assistance.</p>
+                                <p class="slider__content-link" style="padding-top: 20px;">Go to <a href="#">New Product ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-7">
+                            <img src="img/catalog_fifth.jpg" alt="images" class="slider__img img-responsive">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="slider__content">
+                                <h2 class="slider__content-title">Delete Your Product</h2>
+                                <p class="slider__content-text">
+                                    You cannot delete a product page if other sellers added their prices. However, you can delete your listing for a product at any time. If you believe that a product detail page should be removed, contact
+                                    <a href="#">support@collllor.com</a> to report a violation.
+                                </p>
+                                <p class="slider__content-link" style="padding-top: 20px;">View <a href="#">Page Ownership ></a></p>
+                                <p class="slider__content-link">Go to <a href="#">My Products ></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--</div>-->
+                <a class="slider__prev" onclick="plusSlides(-1, 'Catalog')">
+                    <i class="icon-angle-left"></i>
+                </a>
+                <a class="slider__next" onclick="plusSlides(1, 'Catalog')">
+                    <i class="icon-angle-right"></i>
+                </a>
             </div>
         </div>
     </div>

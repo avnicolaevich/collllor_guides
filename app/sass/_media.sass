@@ -41,6 +41,19 @@
 			&-item
 				max-height: 0
 				transition: max-height 0.2s ease-out
+			&-text
+				display: none
+			&-number
+				display: inline-block
+				width: 22px
+				height: 22px
+				border: 2px solid #aaa
+				border-radius: 50%
+				background-color: #fff
+				&--active
+					color: white
+					border-color: $font_hover
+					background-color: $font_hover
 			&-btn
 				padding: 14px 0 14px 10px
 				&::after
@@ -51,19 +64,7 @@
 					border-top-width: 25px
 					border-bottom-width: 25px
 					margin-top: -25px
-			&-text
-				display: none
-			&-number
-				display: inline-block
-				width: 22px
-				height: 22px
-				border: 2px solid #aaa
-				border-radius: 50%
-				background-color: #fff
-				&-active
-					color: #fff
-					border-color: #777
-					background-color: #777
+				
 		&__img
 			padding: 30px
 		&__content

@@ -6,7 +6,7 @@ $heading_color: rgba(60, 59, 59, .7)
 $subheading_color: rgba(132, 127, 127, .77)
 $font_color: rgb(158, 161, 159)
 $link: rgb(229, 8, 8)
-$font_hover: rgb(17, 147, 154)
+$font_hover: rgb(23, 120, 134)
 $white: rgb(255, 255, 255)
 $black: rgb(0, 0, 0)
 $hover_color: rgb(227, 227, 227)
@@ -61,14 +61,26 @@ $background_color: rgb(242, 243, 247)
 @mixin animation
 	animation: slide-bottom 0.4s cubic-bezier(0.550, 0.055, 0.675, 0.190) both
 
-@-webkit-keyframes slide-bottom
-	0%
-		transform: translateY(-5px)
-	100%
-		transform: translateY(0)
-		
-@keyframes slide-bottom
-	0%
-		transform: translateY(-5px)
-	100%
-		transform: translateY(0)
+	@-webkit-keyframes slide-bottom
+		0%
+			transform: translateY(-5px)
+		100%
+			transform: translateY(0)
+			
+	@keyframes slide-bottom
+		0%
+			transform: translateY(-5px)
+		100%
+			transform: translateY(0)
+@mixin animation-slide
+	animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+	@-webkit-keyframes slide-in-left
+		0%
+			opacity: 0
+		100%
+			opacity: 1
+	@keyframes slide-in-left
+		0%
+			opacity: 0
+		100%
+			opacity: 1
